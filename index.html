@@ -38,7 +38,6 @@
             -webkit-tap-highlight-color: transparent;
         }
 
-        /* ========== BACKGROUND ========== */
         .bg-gradient-overlay {
             position: fixed;
             top: 0;
@@ -282,7 +281,6 @@
             100% { opacity: 0; transform: translateX(250%) scaleX(0.5); }
         }
 
-        /* ========== HEADER ========== */
         header {
             position: fixed;
             top: 0;
@@ -348,7 +346,6 @@
             box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
         }
 
-        /* ========== HERO ========== */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -497,7 +494,6 @@
             font-size: 1.2rem;
         }
 
-        /* ========== STATS ========== */
         .stats-section {
             padding: 100px 40px;
             position: relative;
@@ -561,7 +557,6 @@
             font-weight: 500;
         }
 
-        /* ========== TECH ========== */
         .tech-section {
             padding: 80px 40px;
             position: relative;
@@ -699,7 +694,6 @@
             gap: 14px;
         }
 
-        /* ========== SERVICES ========== */
         .services-section {
             padding: 120px 40px;
             position: relative;
@@ -770,7 +764,6 @@
             font-size: 1rem;
         }
 
-        /* ========== CONTACT ========== */
         .contact-section {
             background: var(--bg-secondary);
             padding: 120px 40px;
@@ -936,7 +929,6 @@
             color: #1e3a8a;
         }
 
-        /* ========== FOOTER ========== */
         footer {
             background: var(--bg-primary);
             padding: 70px 40px 40px;
@@ -1061,7 +1053,6 @@
             box-shadow: 0 15px 40px rgba(30, 64, 175, 0.6);
         }
 
-        /* ========== RESPONSIVE ========== */
         @media (max-width: 1200px) {
             .projects-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -1162,7 +1153,6 @@
     </style>
 </head>
 <body>
-    <!-- Background -->
     <div class="bg-gradient-overlay"></div>
     <div class="bg-base"></div>
     <div class="aurora"></div>
@@ -1195,7 +1185,6 @@
         <div class="glow-line"></div>
     </div>
 
-    <!-- Header -->
     <header>
         <div class="header-container">
             <a href="#" class="logo">Below</a>
@@ -1210,7 +1199,6 @@
         </div>
     </header>
 
-    <!-- Hero -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
@@ -1241,7 +1229,6 @@
         </div>
     </section>
 
-    <!-- Stats -->
     <section id="stats" class="stats-section">
         <div class="stats-container">
             <h2 class="section-title">Engineering at Scale</h2>
@@ -1262,7 +1249,6 @@
         </div>
     </section>
 
-    <!-- Tech -->
     <section class="tech-section">
         <div class="tech-container">
             <h2 class="section-title">Core Libraries & Frameworks</h2>
@@ -1272,13 +1258,17 @@
                 <div class="tech-item">Rojo</div>
                 <div class="tech-item">Knit</div>
                 <div class="tech-item">Vide</div>
+                <div class="tech-item">OOP</div>
+                <div class="tech-item">Jecs</div>
                 <div class="tech-item">Profile Service</div>
                 <div class="tech-item">Replica</div>
                 <div class="tech-item">Observer</div>
                 <div class="tech-item">Promise</div>
                 <div class="tech-item">Datastore2</div>
+                <div class="tech-item">Architect</div>
                 <div class="tech-item">BridgeNet2</div>
                 <div class="tech-item">Jolt</div>
+                <div class="tech-item">Packet</div>
                 <div class="tech-item">ZonePlus</div>
                 <div class="tech-item">QuickZone</div>
                 <div class="tech-item">Fastcast2</div>
@@ -1296,7 +1286,6 @@
         </div>
     </section>
 
-    <!-- Projects -->
     <section id="projects" class="projects-section">
         <div class="projects-container">
             <h2 class="section-title">Major Projects</h2>
@@ -1349,7 +1338,6 @@
         </div>
     </section>
 
-    <!-- Services -->
     <section id="expertise" class="services-section">
         <div class="services-container">
             <h2 class="section-title">Technical Services</h2>
@@ -1386,7 +1374,6 @@
         </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="contact-section">
         <div class="contact-container">
             <div class="contact-header">
@@ -1396,7 +1383,6 @@
                 </p>
             </div>
             
-            <!-- ФОРМА WEB3FORMS - РАБОТАЕТ НА МОБИЛЬНЫХ -->
             <form action="https://api.web3forms.com/submit" method="POST" accept-charset="UTF-8">
                 <input type="hidden" name="access_key" value="9e1f6bf9-21e7-4c1a-ba5f-c69c1a9ae5b0">
                 <input type="hidden" name="subject" value="New Message from Portfolio">
@@ -1449,7 +1435,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-content">
@@ -1496,7 +1481,6 @@
     </a>
 
     <script>
-        // Stars
         var starsContainer = document.getElementById('stars');
         for (var i = 0; i < 80; i++) {
             var star = document.createElement('div');
@@ -1508,7 +1492,6 @@
             starsContainer.appendChild(star);
         }
 
-        // Back to top
         var backToTop = document.getElementById('backToTop');
         window.addEventListener('scroll', function() {
             if (window.scrollY > 400) {
@@ -1518,7 +1501,6 @@
             }
         });
 
-        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
